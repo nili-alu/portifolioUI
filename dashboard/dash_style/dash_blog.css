@@ -1,0 +1,39 @@
+.blog{
+    float: left;
+    width: 40%;
+    height: 35%;
+    margin: 4%;
+}
+#image{
+    width: 100%;
+
+
+}
+
+.blog h3{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    
+    color: #5B067F;
+}
+
+.blog button{
+    align-self:self-end;
+    border: none;
+    cursor: pointer;
+    
+width: 120px;
+height: 40px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 17px;
+line-height: 26px;
+background: #EF6D58;
+border-radius: 15px;
+
+color: #FFFFFF;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/login.css">
+</head>
+
+<body>
+
+    <header class="nav-bar">
+        <div class="topnav" id="myTopnav">
+
+            <a href="./index.html"> <svg width="70" height="45" viewBox="0 0 70 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3_123)">
+                <path d="M24.137 22.9189V10.3814H26.7805V22.1284L25.5905 20.7684H31.447V22.9189H24.137ZM35.6773 22.9189H33.1018V10.3814H37.1988L41.3978 21.9669L40.9558 22.0774V10.3814H43.5228V22.9189H39.4003L35.2013 11.3674L35.6773 11.2569V22.9189Z" fill="white"/>
+                <path d="M16.3503 11.1293L33.7851 0.080801L51.22 11.1293L44.7091 28.6071H22.8611L16.3503 11.1293Z" stroke="#EF6D58" stroke-width="5"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_3_123">
+                <rect width="70" height="45" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </a>
+            <a href="./index.html">Home</a>
+            <a href="index.html#page_about">About</a>
+            <a href="index.html#page_skills">Skills</a>
+            <a href="index.html#page_experience">My work</a>
+            <a href="./index.html#page_blog">Blogs</a>
+            <a href="./index.html#page_contact">Contact</a>
+            <a href="./login.html">Login</a>
+
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+    </header>
+
+    <section class="login-sessection">
+
+        <div class="container1">
+            <p id="error_message"></p>
+            <form class="login_form" action="" id="login_user" name="form" method="post">
+                <button type="button" class="cancelbtn">X</button>
+
+                <div class="container2">
+
+                    <div class="google">
+                        <label for="uname"><h3>Only admin can login</h3></label><br><br><br>
+                        <!-- <h4>G Login with Google</h4> -->
+                    </div>
+
+                    <label for="uname"><b>Email  &nbsp;&nbsp;&emsp;</b></label>
+                    <input autocomplete="off" type="text" placeholder="Enter User email" id="email" name="email" required>
+                    <div id="email_error">email required</div>
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" id="password" name="password" required >
+                    <br>
+                    <!-- <span class="p-viewer" id="p-viewer">
+                        <i class="fa fa-eye" aria-hidden="true"></i> -->
+                    <div id="pass_error">password required</div>
+                    <label>
+                        <input type="checkbox" checked="uncheck" name="remember">Remember me </label>
+
+                    <button class="login-button" type="submit">Login</button>
+
+
+                </div>
+                <div class="login-footer">
+
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+
+            </form>
+
+        </div>
+        <script src="/my-brand/js/login2.js"></script>
+    </section>
+
+</body>
+
+</html>

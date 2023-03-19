@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/blog.css">
+    <link rel="stylesheet" href="/my-brand/dashboard/dash_style/add_blog.css">
+    <title>Blog</title>
+</head>
+
+<body>
+
+
+    <div class="overall_container">
+
+
+        <!-- <div class="headers"> -->
+
+        <h5>our blogs</h5>
+        <h2 id="title">Latest blogs <br> article</h2>
+
+
+
+        <div class="headers">
+            <button class="more">Discover All</button>
+        </div>
+        <!-- </div> -->
+
+        <div class="main_container">
+
+            <article class="main_article">
+                <div class="main_image">
+                    <img class="center_image" src="./images/blog1.jpg" alt="error">
+                    <p>Stories</p>
+
+                    <h2>Agency is a business you hire to outsource</h2>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
+                        has survived not only five centuries, but also the leap
+                        into electronic typesetting, remaining essentially unchanged.
+                        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+                        passages, and more recently with desktop publishing software
+                        like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <div class="likes" id="likes_div">
+                        <button style="cursor: pointer;"><i id="like" class="fa fa-thumbs-up"
+                                aria-hidden="true"></i></button>
+                        <p class="no_likes" id="no_likes"></p>
+                    </div>
+                    <div class="comments">
+                        <div id="commentForm" class="container1">
+                            <form id="form">
+                                <button type="button" onclick="closeForm()" class="cancelbtn">X</button>
+
+                                <div class="container2">
+
+                                    <label for="uname"><b>Your email</b></label>
+                                    <input type="text" id="email" placeholder="Enter your email" name="uname" required>
+
+                                    <label for="uname"><b>Your comment message</b></label>
+                                    <textarea name="uname" placeholder="your comment message here" id="description"
+                                        cols="50" rows="10"></textarea>
+
+                                    <button class="comment-button" type="submit">Comment</button>
+                                   
+
+                                </div>
+
+
+                            </form>
+
+
+                        </div>
+
+
+                        <!-- <input type="textarea" placeholder="Write you comment here"> -->
+                        <button id="comment" onclick="openForm()" style="cursor: pointer;">Comment</button>
+                        <p class="no_comments" id="no_comments"></p>
+                    </div><br>
+                </div>
+
+
+            </article>
+
+            <article class="side_article">
+                <div>
+                    <img class="image" src="./images/blog1.jpg" alt="error">
+                    <p>Design</p>
+
+                    <h2>Outsource your digital <br>
+                        marketing efforts</h2>
+                    <div class="likes" id="likes_div">
+                        <button style="cursor: pointer;"><i id="like" class="fa fa-thumbs-up"
+                                aria-hidden="true"></i></button>
+                        <p class="no_likes" id="no_likes"></p>
+                    </div>
+                    <div class="comments">
+                        <div id="commentForm" class="container1">
+                            <form id="form">
+                                <button type="button"   onclick="closeForm()" class="cancelbtn">X</button>
+
+                                <div class="container2">
+
+                                    <label for="uname"><b>Your email</b></label>
+                                    <input type="text" id="email" placeholder="Enter your email" name="uname" required>
+
+                                    <label for="uname"><b>Your comment message</b></label>
+                                    <textarea name="uname" placeholder="your comment message here" id="description"
+                                        cols="50" rows="10"></textarea>
+
+                                    <button class="comment-button" onclick="openForm();" type="submit">Comment</button>
+                                    <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+
+                                </div>
+
+
+                            </form>
+
+
+                        </div>
+
+
+                        <!-- <input type="textarea" placeholder="Write you comment here"> -->
+                        <button id="comment" onclick="openForm()" style="cursor: pointer;">Comment</button>
+                        <p class="no_comments" id="no_comments"></p>
+                    </div><br>
+
+                </div>
+                <div>
+
+
+                    <img class="image" src="./images/blog1.jpg" alt="error">
+                    <p>Design</p>
+
+                    <h2>Outsource your digital <br>
+                        marketing efforts</h2>
+                    <div class="likes" id="likes_div">
+                        <button style="cursor: pointer;"><i id="like" class="fa fa-thumbs-up"
+                                aria-hidden="true"></i></button>
+                        <p class="no_likes" id="no_likes"></p>
+                    </div>
+                    <div class="comments">
+                        <div id="commentForm" class="container1">
+                            <form id="form">
+                                <button type="button"    onclick="closeForm()" class="cancelbtn">X</button>
+
+                                <div class="container2">
+
+                                    <label for="uname"><b>Your email</b></label>
+                                    <input type="text" id="email" placeholder="Enter your email" name="uname" required>
+
+                                    <label for="uname"><b>Your comment message</b></label>
+                                    <textarea name="uname" placeholder="your comment message here" id="description"
+                                        cols="50" rows="10"></textarea>
+
+                                    <button class="comment-button" onclick="openForm();" type="submit">Comment</button>
+                                    <!-- <button type="button">Close</button> -->
+
+                                </div>
+
+
+                            </form>
+
+
+                        </div>
+
+
+                        <!-- <input type="textarea" placeholder="Write you comment here"> -->
+                        <button id="comment" onclick="openForm()" style="cursor: pointer;">Comment</button>
+                        <p class="no_comments" id="no_comments"></p>
+                    </div><br>
+                </div>
+            </article>
+
+        </div>
+
+
+        <div class="low_part">
+            <section class="newsletter">
+                <h4>Newsletter</h4>
+                <p>A digital agency is a business you hire to outsource</p>
+            </section>
+            <section>
+                <form action="" id="form2"><br><br><br>
+                    <input class="input1" id="email" type="email" placeholder="Your email">
+                    <input class="input2" type="submit" name="Subscribe">
+                </form>
+            </section>
+        </div>
+
+
+
+    </div>
+
+    <script src="/my-brand/js/index.js"></script>
+    <script>
+        function openForm() {
+            document.getElementById("commentForm").style.display = "block";
+        }
+
+
+        function closeForm() {
+            document.getElementById("commentForm").style.display = "none";
+
+        }
+    </script>
+    <script src="/my-brand/js/comment_likes.js"></script>
+    <script src="/my-brand/js/subscribers.js"></script>
+
+</body>
+
+</html>

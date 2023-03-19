@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="./dash_style/dashboard.css">
+    <link rel="stylesheet" href="./dash_style/table.css">
+
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navigation">
+          
+
+            <i id="profile" class='fa fa-user-circle' style='font-size:58px'></i>
+
+            <input  id="check" type="checkbox">
+            <label for="check">
+                <!-- <i class="fas fa-bars" id="btn"></i> -->
+                <div id="btn" class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                <!-- <i class="fas fa-times" id="cancel" ></i> -->
+            </label>
+            <style>
+                .container {
+                  display: inline-block;
+                  cursor: pointer;
+                  z-index: 20;
+                }
+                
+                .bar1, .bar2, .bar3 {
+                  width: 35px;
+                  height: 5px;
+                  background-color:white;
+                  margin:8px 0;
+                  transition: 0.4s;
+                }
+                
+                .change .bar1 {
+                  transform: translate(0, 11px) rotate(-45deg);
+                }
+                
+                .change .bar2 {opacity: 0;}
+                
+                .change .bar3 {
+                  transform: translate(0, -11px) rotate(45deg);
+                }
+                </style>
+               
+                  
+                  <script>
+                  function myFunction(x) {
+                    x.classList.toggle("change");
+                  }
+                  </script>
+
+            <ul class="menu">
+               <a href="./dashboard.html"> <li><i class="fa fa-dashboard"></i><button id="text">Dasboard</button></li></a>
+                <!-- <li><i class="fa fa-bar-chart"></i><button id="text">Statistics</button></li> -->
+               <a href="./dash_blog.html"> <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_255_175)">
+                            <path
+                                d="M9.5 4H5.5C4.94772 4 4.5 4.44772 4.5 5V9C4.5 9.55228 4.94772 10 5.5 10H9.5C10.0523 10 10.5 9.55228 10.5 9V5C10.5 4.44772 10.0523 4 9.5 4Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M9.5 14H5.5C4.94772 14 4.5 14.4477 4.5 15V19C4.5 19.5523 4.94772 20 5.5 20H9.5C10.0523 20 10.5 19.5523 10.5 19V15C10.5 14.4477 10.0523 14 9.5 14Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M19.5 14H15.5C14.9477 14 14.5 14.4477 14.5 15V19C14.5 19.5523 14.9477 20 15.5 20H19.5C20.0523 20 20.5 19.5523 20.5 19V15C20.5 14.4477 20.0523 14 19.5 14Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M14.5 7H20.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M17.5 4V10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_255_175">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    <button id="text">Blogs</button>
+                </li></a>
+               <a href="./comment.html"><li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_255_110)">
+                            <path
+                                d="M12.5 20L9.5 17H7.5C6.70435 17 5.94129 16.6839 5.37868 16.1213C4.81607 15.5587 4.5 14.7956 4.5 14V8C4.5 7.20435 4.81607 6.44129 5.37868 5.87868C5.94129 5.31607 6.70435 5 7.5 5H17.5C18.2956 5 19.0587 5.31607 19.6213 5.87868C20.1839 6.44129 20.5 7.20435 20.5 8V14C20.5 14.7956 20.1839 15.5587 19.6213 16.1213C19.0587 16.6839 18.2956 17 17.5 17H15.5L12.5 20Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M8.5 9H16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M8.5 13H14.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_255_110">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    </i><button id="text">Comments</button></li></a>
+               <a href="./new_account.html"><li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_255_118)">
+                            <path
+                                d="M12.5 11.5C14.7091 11.5 16.5 9.70914 16.5 7.5C16.5 5.29086 14.7091 3.5 12.5 3.5C10.2909 3.5 8.5 5.29086 8.5 7.5C8.5 9.70914 10.2909 11.5 12.5 11.5Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M6.5 21.5V19.5C6.5 18.4391 6.92143 17.4217 7.67157 16.6716C8.42172 15.9214 9.43913 15.5 10.5 15.5H14.5C15.5609 15.5 16.5783 15.9214 17.3284 16.6716C18.0786 17.4217 18.5 18.4391 18.5 19.5V21.5"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_255_118">
+                                <rect width="24" height="24" fill="white" transform="translate(0.5 0.5)" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                    </i><button id="text">New Account</button></li></a>
+
+               <a href=".my-brand/index.html"><li><i class="fa fa-sign-out"></i><button id="text">Logout</button></li></a>
+                <a href="./new_blog.html"><li><i class="fa fa-plus"></i><button id="text">New Post</button></li></a>
+            </ul>
+
+        </nav>
+        <aside>
+            <h3>Dashboard</h3>
+            <div class="records_row1">
+                <div class="records">
+                    <i id="line1" class="fa fa-external-link-square"
+                        style="font-size:48px;color:white; float:right;"></i>
+                    <p id='line2'><i class="fa fa-user-o"></i> Subscribers&emsp;</p>
+                    <p id='line2' style="background:#EF6D58;">900K</p>
+                </div>
+                <div class="records">
+                    <i id="line1" class="fa fa-external-link-square"
+                        style="font-size:48px;color:white; float:right;"></i>
+                    <p id='line2'>
+                        <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M14.5796 3.29603C15.5155 2.50223 17.048 2.50223 17.9974 3.29603L20.1403 5.1258C20.5471 5.47561 21.3066 5.75814 21.8491 5.75814H24.1548C25.5924 5.75814 26.7723 6.92866 26.7723 8.3548V10.642C26.7723 11.1667 27.0571 11.9336 27.4098 12.3372L29.2543 14.463C30.0545 15.3913 30.0545 16.9116 29.2543 17.8534L27.4098 19.9792C27.0571 20.3828 26.7723 21.1363 26.7723 21.6744V23.9616C26.7723 25.3878 25.5924 26.5583 24.1548 26.5583H21.8491C21.3202 26.5583 20.5471 26.8408 20.1403 27.1906L17.9974 29.0204C17.0616 29.8142 15.529 29.8142 14.5796 29.0204L12.4368 27.1906C12.0299 26.8408 11.2704 26.5583 10.7279 26.5583H8.38158C6.94396 26.5583 5.76402 25.3878 5.76402 23.9616V21.661C5.76402 21.1363 5.47921 20.3828 5.14014 19.9792L3.30921 17.84C2.52258 16.9116 2.52258 15.4048 3.30921 14.4764L5.14014 12.3372C5.47921 11.9336 5.76402 11.1802 5.76402 10.6555V8.3548C5.76402 6.92866 6.94396 5.75814 8.38158 5.75814H10.7279C11.2568 5.75814 12.0299 5.47561 12.4368 5.1258L14.5796 3.29603Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M13.4134 19.939L15.3799 21.4458C15.6376 21.7015 16.2072 21.8225 16.587 21.8225H18.9875C19.747 21.8225 20.5744 21.2575 20.7642 20.504L22.2832 15.9027C22.5952 15.0282 22.0255 14.2613 21.0762 14.2613H18.54C18.1602 14.2613 17.8483 13.9519 17.9025 13.5079L18.2145 11.4897C18.3365 10.9247 17.9568 10.2923 17.3872 10.104C16.8854 9.91561 16.2479 10.1712 15.9902 10.548L13.3862 14.3824"
+                                stroke="white" stroke-width="1.5" stroke-miterlimit="10" />
+                            <path
+                                d="M10.1719 19.939V13.777C10.1719 12.889 10.5516 12.5796 11.4467 12.5796H12.0842C12.9657 12.5796 13.3591 12.889 13.3591 13.777V19.939C13.3591 20.8135 12.9793 21.1364 12.0842 21.1364H11.4467C10.5516 21.1364 10.1719 20.827 10.1719 19.939Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+                        Likes&emsp;
+                    </p>
+                    <p id='line2' style="background:#EF6D58;">10K</p>
+                </div>
+            </div>
+            <div class="records_row2">
+                <div class="records">
+                    <i id="line1" class="fa fa-external-link-square"
+                        style="font-size:48px;color:white; float:right;"></i>
+                    <p id='line2'>
+                        <svg width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <rect x="0.15332" y="0.924316" width="36.6154" height="31.5042" fill="url(#pattern0)" />
+                            <defs>
+                                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                                    <use xlink:href="#image0_266_772"
+                                        transform="matrix(0.00806452 0 0 0.00937289 0 -0.081119)" />
+                                </pattern>
+                                <image id="image0_266_772" width="124" height="124"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHwAAAB8CAIAAAAkfEPpAAAEZklEQVR4nO3dv0s6cRzH8c/3ixIZ5BASGOTQECRuNhhBlEvcUE1pg0uDo0NLEDW5RoPtLi3nIjV0bv4DN4ZCYEuhEBLkUIIKfgc3/X77+rV7f17Xt9djPPLen++Tb3fmj7sf/X5fkV4/0Qv4jhgdgNEBGB2A0QEYHYDRARgdgNEBGB2A0QEYHYDRARgdgNEBGB2A0QEYHYDRARgdgNEBGB2A0QE8+ke2Wq23t7d2u61/9JDp6emZmRm/3697cF+jcrmcTqdDoZDuf+SfhUKhdDpdLpd1dtAUvVarxeNxdOGPxOPxer2up4aO6LZto5OOy7ZtDUF+9IU/y9hoNBYWFkRHOKterweDQdER4s9ejo6OpEc4S8OCZf+nV6vVcDg8un1ubm5+fl5u7pien59fXl5Gt1cqlZWVFbm5sk8Zi8Xi6MZsNnt4eBgIBERHj6PZbObz+bOzs6HtxWJRNLrgibTT6RiGMTQuk8nITZxMJpMZWqRhGJ1OR26i4DG91+tVKpWhjalUSm7iZEaXVKlUer2e3ETdLwP4fD7NE/9K/5L42gsAowMwOgCjAzA6AKMDMDoAowMA3q4b1e12Lcu6v78XnbK8vGwYhtfrFZ0yDnz0bre7t7dnWZaGWYZhXF9fw7vjDy+WZekprnnWB/DRpY8q2HG/hY++uLj4H4/7LXz0ZDI5+rK7EMMwksmknlkfwJ9IlVK3t7c3Nzcanr3s7u6KjhiTK6IrpVySQw/84eUbYnQARgdgdAC3nEhbrdbj4+Nkj/X5fEtLS86uR5Qropummc1mq9XqxHtIJBIXFxfSn0F0Cj763d3dwcHBJ3dSKBSUUqZpOrEicfhjeqlUcmQ/hULh4eHBkV1Jw0efnZ1FL0E3fPSdnR1H9pPJZL7K6RR/TA8Gg7Ztn5+fPz09TbyTra2tk5MTB1clCh9dKRWNRk3TbLVaE+8B8A25T3BF9IGvFe4z8Mf0b4jRARgdgNEBXHEibTQa+Xy+VquN88N+vz+VSkWjUelVycFHb7fbGxsbYxYfyOVypVJpe3tbblWi8IcX0zT/qfjA5eVlt9uVWI8G+OjNZnOCR72+vr6/vzu+GD3w0VdXVyd4VDQa/bp/TOGjb25unp6e/tND1tbWjo+PhdajAf5EqpTKZrP7+/v1en2cH56amlpfX4d/8vYzXBFdKRWJRCKRCHoVmuAPL98QowMwOgCjAzA6AKMDMDoAowMwOgCjAzA6AKMDMDoAowPoju7C99j0L0kwusfjGb268dXVldzEyYwuKRwOezyC7zQI7trr9cZisaFLfeRyuUAg4KoLHOdyuaHtsVhM9J0pXsobcClv8dszJBIJwdULSCQS0k14e4Zh/8PtGQbfbpGe4hTbtnV8GVX6V2nA/bfcMQyjVqvpqcGbSwFuLiV+TB/F26gBohNfewFgdABGB2B0AEYHYHQARgdgdABGB2B0AEYHYHQARgdgdABGB2B0AEYHYHQARgdgdABGB2B0AEYH+AXEvE9ZITHkcgAAAABJRU5ErkJggg==" />
+                            </defs>
+                        </svg>
+                        Blogs&emsp;
+                    </p>
+                    <p id='line2' style="background:#EF6D58;">30</p>
+                </div>
+                <div class="records">
+                    <i id="line1" class="fa fa-external-link-square"
+                        style="font-size:48px;color:white; float:right;"></i>
+                    <p id='line2'>
+                        <svg width="38" height="33" viewBox="0 0 38 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19.0002 26.9083L14.2502 22.8721H11.0835C9.82372 22.8721 8.61554 22.4468 7.72474 21.6899C6.83394 20.9329 6.3335 19.9063 6.3335 18.8358V10.7633C6.3335 9.69282 6.83394 8.66619 7.72474 7.90924C8.61554 7.1523 9.82372 6.72705 11.0835 6.72705H26.9168C28.1766 6.72705 29.3848 7.1523 30.2756 7.90924C31.1664 8.66619 31.6668 9.69282 31.6668 10.7633V18.8358C31.6668 19.9063 31.1664 20.9329 30.2756 21.6899C29.3848 22.4468 28.1766 22.8721 26.9168 22.8721H23.7502L19.0002 26.9083Z"
+                                stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M12.6665 12.1089H25.3332" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                            <path d="M12.6665 17.4902H22.1665" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+
+                        Comments&emsp;
+                    </p>
+                    <p id='line2' style="background:#EF6D58;">90</p>
+                </div>
+            </div>
+        </aside>
+
+
+
+
+    </div>
+
+</body>
+
+</html>

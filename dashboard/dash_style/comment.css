@@ -1,0 +1,151 @@
+body{
+    
+    background: #FDF0E9;
+    left: 0;
+}
+
+
+.main h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+/* line-height: 0px; */
+color: #0A376E;
+
+}
+
+.navigation #profile{
+    color: white;
+    width: 70px;
+    height: 70px;
+    margin-left:60px;
+    margin-top: 20px;
+   
+}
+ .navigation{
+    position: absolute;
+    float: left;
+    width: 240px;
+    height: 105%;
+    left: 0%;  
+    background: #28293E;
+top:0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    position: absolute;
+    width: 183px;
+    /* height: 326px; */
+    left: calc(50% - 183px/2 - 1px);
+    top: 84px;
+
+}
+.main li{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 10px;
+    gap: 16px;
+    
+    width: 134px;
+    height: 30px;
+    
+    background: #EF6D58;
+    border-radius: 50px;
+     /* flex: none;
+    order: 3;
+    flex-grow: 0; */
+}
+.main li:hover{
+    background-color:#0A376E;
+    color:  #EF6D58;
+}
+.menu i{
+    
+width: 24px;
+height: 24px;
+align-self: center;
+color: white;
+}
+
+
+#text{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 100px;
+height: 31px;
+background: #EF6D58;
+border: none;
+color: white;
+
+}
+
+#text:hover{
+    background-color: white;
+    color:  #EF6D58;
+}
+
+
+
+.main aside{
+   
+    width: 75%;
+    /* left: 25%; */
+    margin-left: 20%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 8%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 3px;
+    
+  }
+  th{
+    background: #28293E;
+    color: white;
+  }
+
+  #reply {
+    cursor: pointer;
+    border: none;
+   background: #28293E;
+    color:white; border:none"
+  }
+  #reply:hover {
+    background:#EF6D58;
+    transition-duration: 0.4s;
+  }
+  #delete {
+    cursor: pointer;
+    border: none;
+    background:#EF6D58;
+     color:white; border:none"
+   }
+
+  #delete:hover {
+
+    transition-duration: 0.4s;
+    background: #28293E;
+  }
+
+  #tableValue{
+    margin-top: 0px;
+  }

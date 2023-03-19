@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/my-brand/dashboard/dash_style/add_blog.css">
+
+    <title>Comment</title>
+</head>
+<body>
+    <div class="container1">
+        <form id="form">
+            <button type="button" class="cancelbtn">X</button>
+
+            <div class="container2">
+
+                <label for="uname"><b>Your email</b></label>
+                <input type="text" id="email" placeholder="Enter your email" name="uname" required>
+
+                <label for="uname"><b>Your comment message</b></label>
+                <textarea name="uname" placeholder="your comment message here" id="description" cols="50" rows="10"></textarea>
+
+                <button class="comment-button" onclick="openForm();" id="submi" type="submit">Comment</button>
+                <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+
+            </div>
+
+
+        </form>
+
+
+    </div>
+
+    <!-- <script>
+        function openForm() {
+          document.getElementById("form").style.display = "block";
+        }
+        
+        function closeForm() {
+            window.location.replace('/my-brand/index.html');
+        }
+        </script> -->
+        <script src="/my-brand/js/comment_likes.js"></script>
+</body>
+</html>
+
+

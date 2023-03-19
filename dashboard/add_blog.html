@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <!-- <link rel="stylesheet" href="./dash_style/comment.css"> -->
+    <link rel="stylesheet" href="./dash_style/add_blog.css">
+    <link rel="stylesheet" href="./dash_style/dashboard.css">
+
+    <title>New Blog</title>
+</head>
+
+<body>
+    <div class="main">
+        <nav class="navigation">
+
+            <i id="profile" class='fa fa-user-circle' style='font-size:58px'></i>
+            <input  id="check" type="checkbox">
+            <label for="check">
+                <!-- <i class="fas fa-bars" id="btn"></i> -->
+                <div id="btn" class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                <!-- <i class="fas fa-times" id="cancel" ></i> -->
+            </label>
+            <style>
+                .container {
+                  display: inline-block;
+                  cursor: pointer;
+                  z-index: 20;
+                }
+                
+                .bar1, .bar2, .bar3 {
+                  width: 35px;
+                  height: 5px;
+                  background-color:white;
+                  margin:8px 0;
+                  transition: 0.4s;
+                }
+                
+                .change .bar1 {
+                  transform: translate(0, 11px) rotate(-45deg);
+                }
+                
+                .change .bar2 {opacity: 0;}
+                
+                .change .bar3 {
+                  transform: translate(0, -11px) rotate(45deg);
+                }
+                </style>
+               
+                  
+                  <script>
+                  function myFunction(x) {
+                    x.classList.toggle("change");
+                  }
+                  </script>
+
+                  <ul class="menu">
+                    <a href="./dashboard.html"> <li><i class="fa fa-dashboard"></i><button id="text">Dasboard</button></li></a>
+                    <!-- <li><i class="fa fa-bar-chart"></i><button id="text">Statistics</button></li> -->
+                   <a href="./dash_blog.html"> <li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_255_175)">
+                                <path
+                                    d="M9.5 4H5.5C4.94772 4 4.5 4.44772 4.5 5V9C4.5 9.55228 4.94772 10 5.5 10H9.5C10.0523 10 10.5 9.55228 10.5 9V5C10.5 4.44772 10.0523 4 9.5 4Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M9.5 14H5.5C4.94772 14 4.5 14.4477 4.5 15V19C4.5 19.5523 4.94772 20 5.5 20H9.5C10.0523 20 10.5 19.5523 10.5 19V15C10.5 14.4477 10.0523 14 9.5 14Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M19.5 14H15.5C14.9477 14 14.5 14.4477 14.5 15V19C14.5 19.5523 14.9477 20 15.5 20H19.5C20.0523 20 20.5 19.5523 20.5 19V15C20.5 14.4477 20.0523 14 19.5 14Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.5 7H20.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M17.5 4V10" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_255_175">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <button id="text">Blogs</button>
+                    </li></a>
+                   <a href="./comment.html"><li><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_255_110)">
+                                <path
+                                    d="M12.5 20L9.5 17H7.5C6.70435 17 5.94129 16.6839 5.37868 16.1213C4.81607 15.5587 4.5 14.7956 4.5 14V8C4.5 7.20435 4.81607 6.44129 5.37868 5.87868C5.94129 5.31607 6.70435 5 7.5 5H17.5C18.2956 5 19.0587 5.31607 19.6213 5.87868C20.1839 6.44129 20.5 7.20435 20.5 8V14C20.5 14.7956 20.1839 15.5587 19.6213 16.1213C19.0587 16.6839 18.2956 17 17.5 17H15.5L12.5 20Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M8.5 9H16.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path d="M8.5 13H14.5" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_255_110">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        </i><button id="text">Comments</button></li></a>
+                   <a href="./new_account.html"><li><svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_255_118)">
+                                <path
+                                    d="M12.5 11.5C14.7091 11.5 16.5 9.70914 16.5 7.5C16.5 5.29086 14.7091 3.5 12.5 3.5C10.2909 3.5 8.5 5.29086 8.5 7.5C8.5 9.70914 10.2909 11.5 12.5 11.5Z"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M6.5 21.5V19.5C6.5 18.4391 6.92143 17.4217 7.67157 16.6716C8.42172 15.9214 9.43913 15.5 10.5 15.5H14.5C15.5609 15.5 16.5783 15.9214 17.3284 16.6716C18.0786 17.4217 18.5 18.4391 18.5 19.5V21.5"
+                                    stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_255_118">
+                                    <rect width="24" height="24" fill="white" transform="translate(0.5 0.5)" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        </i><button id="text">New Account</button></li></a>
+    
+                   <a href="/my-brand/index.html"><li><i class="fa fa-sign-out"></i><button id="text">Logout</button></li></a>
+                    <a href="./new_blog.html"><li><i class="fa fa-plus"></i><button id="text">New Post</button></li></a>
+                </ul>
+    
+            </nav>
+        <aside>
+            <h3>Create new blog</h3>
+
+
+            <div class="container1">
+                <form action="/action_page.php" method="post">
+                    <button type="button" class="cancelbtn">X</button>
+
+                    <div class="container2">
+
+                        <label for="uname"><b>Blog title</b></label>
+                        <input type="text" placeholder="Enter blog title" name="uname" required>
+
+                        <label for="uname"><b>Blog description</b></label>
+                        <textarea name="uname" placeholder="paste your text here" id="" cols="50" rows="10"></textarea>
+                       
+
+                        <label for="uname">Upload image</b></label>
+                         <input type="url" id="myFile" name="filename">
+
+
+                        <button class="login-button" type="submit">Post</button>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+
+        </aside>
+
+    </div>
+
+</body>
+
+</html>

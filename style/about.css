@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro');
+*{
+   
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'poppins';
+}
+
+body{
+    background-color: #FDF0E9;
+    background-position: center;
+    background-size: cover;
+    /* height: 900px; */
+   
+}
+
+/* .nav-bar{
+    position: relative;
+    width: 100%;
+    height: 10%;
+} */
+
+.about{
+    position: absolute;
+    width: 100%;
+    height: 600px;
+}
+.upperpart{
+    position: static;
+    display: flex;
+    width: 90%;
+    margin: 5%;
+    height: 70%;
+}
+.upperpart .image{
+    position: relative;
+    width:50%;
+    height: 45%;
+    border-radius: 100%;
+
+}
+.upperpart img{
+    position: relative;
+    height: 8cm;
+    width: 8cm;
+    border-radius: 100%;
+    margin-left:17%;
+    margin-top: 2%;
+    
+}
+.aside{
+    position: static;
+    width: 50%;
+    /* border: 1px solid #EF6D58; */
+    height: 80%;
+}
+
+ .aside h5{
+    position: absolute;
+    width: 40%;
+    left: 60%;
+    /* height: 32px;
+    
+    top:12%; */
+    
+    /* H5 */
+    
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    /* identical to box height, or 200% */
+    
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    
+    /* Text_Dark_Accent */
+    
+    color: #EF6D58;
+
+
+}
+.upperpart h2{
+    
+position: absolute;
+width: 40%;
+height: 80px;
+left: 60%;
+top:19%;
+
+/* H2 */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 56px;
+line-height: 64px;
+letter-spacing: -1px;
+
+color: #391400;
+}
+.upperpart h6{
+    position: absolute;
+width: 277px;
+height: 12px;
+left: 60%;
+top:45%;
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+
+color: #391400;
+
+}
+.upperpart p{
+    position: absolute;
+width: 470px;
+height: 58px;
+left: 60%;
+top: 50%;
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 32px;
+/* or 200% */
+color: rgba(57, 20, 0, 0.64);
+
+}
+.aside button{
+    /* Button */
+    position: absolute;  
+width: 138px;
+height: 48px;
+left:60%;
+top:75%;
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 14px;
+text-align: center;
+text-transform: uppercase;
+background-color:white ;
+color: #391400;
+border: none;
+box-shadow: 0px 3px 9px rgba(57, 20, 0, 0.08);
+border-radius: 6px;
+}
+
+.about .lowpart{
+    position: absolute;
+    display: flex;
+    width:80%;
+    height:18% ;
+    top:100%;
+    margin-right: 10%;
+    margin-left:10%;
+
+}
+.lowpart article{
+    float: left;
+    text-align: center;
+    border: 1px solid #F3D1BF;
+    width: 50%;
+    height: 100%;
+    
+}
+.lowpart h3{
+    
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 800;
+font-size: 40px;
+line-height: 48px;
+
+color: #391400;
+}
+
+.lowpart  p{
+    /* Years of experience */
+
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 32px;
+color: #391400;
+}
+.lowpart .years-exp h3{
+    margin-top: 10px;
+    
+}
+.lowpart .project h3{
+    margin-top: 10px;
+    
+}
+
+@media (max-width: 909px) {
+
+    
+.about{
+    
+    width: 100%;
+    height: 650px;
+}
+.upperpart{
+    flex-direction:column;
+    width: 90%;
+    margin: 5%;
+    height: 600px;
+
+}
+
+.upperpart img{
+    /* margin-top: 10%; */
+    
+    height: 4cm;
+    width: 4cm;
+    border-radius: 100%;
+    margin-left: 50%;
+   
+}
+
+.upperpart .aside{
+
+    width: 90%;
+    margin: 5%;
+    top: 10%;
+    height: 600px;
+}
+.aside button{
+
+width: 138px;
+height: 48px;
+left:20%;
+top:85%;
+}
+.upperpart h6{
+    position: absolute;
+width: 277px;
+height: 32px;
+left: 10%;
+top:55%;
+}
+.upperpart p{
+
+width: 300px;
+height: 25px;
+left: 10%;
+top:60%;
+}
+.upperpart h2{
+
+    width: 40%;
+    height: 50px;
+    left: 15%;
+    top:42%;
+    font-weight: 800;
+font-size: 36px;
+line-height: 18px;
+}
+.upperpart h5{
+    left:10%;
+    top:35%;
+
+}
+}

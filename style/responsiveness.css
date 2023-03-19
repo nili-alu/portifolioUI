@@ -1,0 +1,78 @@
+@media (max-width:909px){
+
+
+  .experience  iframe {
+        position: absolute;
+      padding: auto;
+      left:0;
+      margin: 0;
+      width: 100%;
+      /* height: 100%; */
+    
+    }
+    .experience{
+        position: relative;
+
+        padding: 20%;
+        width: 100%;
+        top:116rem;
+
+    }
+  
+
+.about{
+    position: relative;
+   
+    padding: 20%;
+    width: 100%;
+    top:165rem;
+
+}
+
+
+
+.skills{
+    position: relative;
+    /* overflow:scroll; */
+    padding: 20%;
+    width: 100%;
+        top:210rem;
+}
+.blog{
+    position: relative;
+
+    padding: 20%;
+    width: 100%;
+        top:250rem;
+}
+
+
+
+.contact-me{
+    position: relative;
+
+    padding: 20%;
+    width: 100%;
+        top:325rem;
+
+}
+
+.footer{
+    position: relative;
+    /* overflow:scroll; */
+    padding: 20%;
+    width: 100%;
+        top:380rem;
+
+
+}
+iframe {
+    position: absolute;
+  padding: auto;
+  left:0;
+  margin: 0;
+  width: 100%;
+
+    
+}
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/index.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/responsiveness.css">
+    <!-- <link rel="stylesheet" href="./style/contact.css">
+    <link rel="stylesheet" href="./style/experience.css"> -->
+    <title>Portifolio</title>
+</head>
+
+<body>
+    <section class="rending-page">
+        
+        <div class="nav-bar">
+            <!-- <iframe src="./nav.html" width="100%" height="80px" frameborder="0"></iframe> -->
+            <div class="topnav" id="myTopnav">
+
+               <a href="./index.html"> <svg width="70" height="45" viewBox="0 0 70 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_3_123)">
+                    <path d="M24.137 22.9189V10.3814H26.7805V22.1284L25.5905 20.7684H31.447V22.9189H24.137ZM35.6773 22.9189H33.1018V10.3814H37.1988L41.3978 21.9669L40.9558 22.0774V10.3814H43.5228V22.9189H39.4003L35.2013 11.3674L35.6773 11.2569V22.9189Z" fill="white"/>
+                    <path d="M16.3503 11.1293L33.7851 0.080801L51.22 11.1293L44.7091 28.6071H22.8611L16.3503 11.1293Z" stroke="#EF6D58" stroke-width="5"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_3_123">
+                    <rect width="70" height="45" fill="white"/>
+                    </clipPath>
+                    </defs>
+                    </svg>
+                </a>
+                    
+                <a href="./index.html">Home</a>
+                <a href="index.html#page_about">About</a>
+                <a href="index.html#page_skills">Skills</a>
+                <a href="index.html#page_experience">My work</a>
+                <a href="./index.html#page_blog">Blogs</a>
+                <a href="./index.html#page_contact">Contact</a>
+                <a href="./login.html">Login</a>
+                <!-- <a href="./about.html">About</a>
+                <a href="./skills.html">Skills</a>
+                <a href="./experience.html">My work</a>
+                <a href="./blogs.html">Blogs</a>
+                <a href="./contact.html">Contact</a> 
+                <a href="./contact.html">Contact</a>-->
+               
+
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+
+
+            </div>
+
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myTopnav");
+                    if (x.className === "topnav") {
+                        x.className += " responsive";
+                    } else {
+                        x.className = "topnav";
+                    }
+                }
+            </script>
+
+
+        </div>
+
+
+
+        <section class="rending_container">
+            <p id="name">LIEVIN NIYOYANDIKA</p>
+            <h1 id="Header">Frontend <br>&emsp;Developer</h1><br>
+            <p id="detail">A student at African Leadership University in Third year of <br> Computer Science. I am
+                Tech enthusiast, </p>
+            <button id="resume">My Resume</button>
+            <div class="container-main">
+                <div class="container1">
+
+                    <div class="profile-image">
+                        <img id="image-id" src="/images/lievin.jpeg" alt="image error">
+                      
+                            
+                    </div>
+                    <div class="mask1">
+                        <div class="circle"></div>
+                        <div class="rectangle"></div>
+                    </div>
+
+
+                </div>
+        </section>
+    </section>
+
+    </div>
+
+    <div class="page2">
+        <div class="headers">
+            <h6 class="service">Service</h6>
+            <h4>How I can Help You With</h4>
+
+        </div>
+
+
+        <article>
+            <ul class="art-service">
+                <li>
+                    <article class="card1">
+                        <i class='fas fa-brush' style='font-size:48px;color:red'></i>
+                        
+                        <h4>Design</h4><br><br>
+                        <p>Agency is a business you hire to outsource your <br>
+                            digital marketing efforts, instead of handling in-house.</p><br><br>
+                        <button id="learnMore">Learn more</button>
+                    </article>
+                </li>
+                <li>
+                    <article class="card2">
+                        <h4>Development</h4><br><br>
+                        <p>Hire to outsource your digital marketing efforts, <br>
+                            instead of handling in-house can provide your business.</p><br><br>
+                        <button id="learnMore">Learn more</button>
+
+                    </article>
+                </li>
+                <p class="more">what more service? <button>
+                        <h5>Explore more</h5>
+                    </button></p>
+
+            </ul>
+
+
+        </article>
+    </div>
+
+    <article class="experience">
+
+        <iframe src="./experience.html" width="1248" height="900px" frameborder="0"></iframe>
+
+    </article>
+    <a name="page_experience"></a>
+
+    <article class="about">
+
+        <iframe src="./about.html" width="1248" height="750px" frameborder="0"></iframe>
+    </article>
+    <a name="page_about"></a>
+
+    <article class="skills">
+
+        <iframe src="./skills.html" width="1248" height="700px" frameborder="0"></iframe>
+
+    </article>
+    <a name="page_skills"></a>
+
+    
+    <article class="blog">
+        
+        <iframe src="./blog.html" width="1248" height="1250px" frameborder="0"></iframe>
+    </article>
+    <a name="page_blog"></a>
+
+    <article class="contact-me">
+
+        <iframe src="./contact.html" width="1248" height="900px" frameborder="0"></iframe>
+
+    </article>
+    <a name="page_contact"></a>
+
+ 
+    <article class="footer">
+        <a name="page_footer"></a>
+        <iframe src="./footer.html" width="1248" height="610px" frameborder="0"></iframe>
+
+    </article>
+
+
+
+
+
+</body>
+
+</html>

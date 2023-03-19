@@ -1,0 +1,284 @@
+body{
+    
+    background: #FDF0E9;
+    left: 0;
+}
+
+
+.main h3{
+    font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+/* line-height: 0px; */
+color: #0A376E;
+
+}
+
+.navigation #profile{
+    color: white;
+    width: 70px;
+    height: 70px;
+    margin-left:60px;
+    margin-top: 20px;
+   
+}
+ .navigation{
+    position: absolute;
+    float: left;
+    width: 240px;
+    height: 105%;
+    left: 0%;  
+    background: #28293E;
+top:0;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 16px;
+    
+    position: absolute;
+    width: 183px;
+    /* height: 326px; */
+    left: calc(50% - 183px/2 - 1px);
+    top: 84px;
+
+}
+.main li{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 6px 10px;
+    gap: 16px;
+    
+    width: 134px;
+    height: 30px;
+    
+    background: #EF6D58;
+    border-radius: 50px;
+     /* flex: none;
+    order: 3;
+    flex-grow: 0; */
+}
+.main li:hover{
+    background-color:#0A376E;
+    color:  #EF6D58;
+}
+.menu i{
+    
+width: 24px;
+height: 24px;
+align-self: center;
+color: white;
+}
+
+
+#text{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+gap: 24px;
+
+width: 100px;
+height: 31px;
+background: #EF6D58;
+border: none;
+color: white;
+
+}
+
+#text:hover{
+    background-color: white;
+    color:  #EF6D58;
+}
+
+
+
+.main aside{
+   
+    width: 75%;
+    /* left: 25%; */
+    margin-left: 20%;
+}
+aside .records{
+    width: 44%;
+    height: 10rem;
+    background: #28293E;
+   
+}
+.records #line1{
+    
+    display: flex;   
+    flex-direction: row;
+   
+}
+.records p{
+   
+    margin-top: 90px;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 38px;
+    color: white;
+}
+.records_row1{
+    display: flex;
+
+}
+.records_row2{
+    display: flex;
+    margin-top: 30px;
+
+}
+.records_row1 div{
+   margin: 25px;
+
+}
+.records_row2 div{
+    margin: 25px;
+ 
+ }
+
+ label #btn,
+ label #cancel{
+    color:white;
+    font-size: 50px;
+    float: right;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+ }
+ #check{
+    display: none;
+ }
+ #check:checked ~ menu{
+    display: flex;
+ }
+
+ a{
+    text-decoration: none;
+ }
+   /* .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        
+        background: #28293E;
+        position: absolute;
+        width: 50%;   
+        left:0;
+        top: 35%;
+        z-index: 5;
+    } */
+
+ @media (max-width: 909px) {
+    label #btn{
+        display: block;
+
+    }
+    a:hover,a.active{
+        background: none;
+        color: #0082e6;
+        left: 0%;
+      }
+    
+      #check:checked ~ ul{
+        left: 0;
+        /* overflow: hidden; */
+         display: none;
+        
+        width: 80%;
+        height: 100%;
+      }
+      
+    
+
+      .navigation #profile{
+       display: none;
+       width: 0;
+       
+    }
+     .navigation{
+        position: absolute;
+        width: 100%;
+        height: 7%;
+        left: 0%;
+        top:0;
+    }
+ 
+   .main aside{
+        width: 100%;
+ 
+        margin-top: 18%;
+        margin-left: 0;
+        /* border: #EF6D58 solid; */
+        z-index: 0;
+    }
+  
+    .menu{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        
+        background: #28293E;
+        position: absolute;
+        width: 50%;   
+        left:0;
+        top: 35%;
+        z-index: 5;
+    }
+  
+
+
+
+aside .records{
+    width: 80%;
+    height: 10rem;
+    /* margin-top: 10%; */
+   
+}
+.records #line1{
+    /* position: absolute; */
+    display: flex;   
+    flex-direction: column;
+    margin: 20px 10px;
+    line-height: 20px;
+   
+}
+
+.records p{
+   
+    margin-top: 90px;
+    display: inline-block;
+    padding-left: 10px;
+    font-size: 24px;
+
+}
+.records_row1{
+    display: flex;
+    flex-direction: column;
+
+}
+.records_row2{
+    display: flex;
+    flex-direction: column;
+
+}
+.records_row1 div{
+   margin: 10%;
+
+}
+.records_row2 div{
+    margin: 10%;
+ 
+ } 
+ }
+
+
+ 
